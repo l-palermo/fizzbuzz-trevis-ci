@@ -1,11 +1,17 @@
 def fizzbuzz(number)
-  if number % 15 == 0
-    return "fizzbuzz"
-  elsif number % 3 == 0
-    return "fizz"
-  elsif number % 5 == 0
-    return "buzz"
-  else
-    number
-  end
+  n = 0
+  result = []
+  while n < number do 
+    n += 1
+    if n % 15 == 0
+      result << "fizzbuzz"
+    elsif n % 3 == 0
+      result << "fizz"
+    elsif n % 5 == 0
+      result <<  "buzz"
+    else
+      result << n
+    end
+  end 
+  result.join(", ")
 end
