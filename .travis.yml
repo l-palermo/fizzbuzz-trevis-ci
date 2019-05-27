@@ -1,5 +1,5 @@
 language: ruby
 rvm:
-- 2.6.0p0
-- jruby
-install: true
+- 2.2
+script:
+- bundle exec rspec
